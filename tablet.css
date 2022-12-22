@@ -1,0 +1,140 @@
+/***** TABLET *****/
+
+/* MEDIUM */
+
+@media screen and (max-width: 991.9px) {
+    .container {
+        padding: 0 40px;
+    }
+
+    .header {
+        padding-top: 40px;
+    }
+
+    .hero {
+        margin-top: 80px;
+        padding-top: 88px;
+        padding-bottom: 0;
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -0.777778px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        /* line-height har bir qator bo'yi */
+        line-height: 28px;
+        /* letter-spacing har bir harf o'rasidagi joyni belgilaydi */
+        letter-spacing: 0.0888889px;
+        margin: 40px 0 40px;
+    }
+
+    .line::before {
+        width: 231.19px;
+        height: 29px;
+        top: -50px;
+    }
+
+    .hero::after {
+        width: 281px;
+        height: 482px;
+        left: 100%;
+        transform: translateX(calc(-100% - 40px));
+    }
+
+    .hero-info {
+        max-width: 500px;
+    }
+
+    .statistics {
+        width: 100%;
+        gap: 10px;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 128px;
+    }
+
+    .statistics-item {
+        width: calc((100% - 20px) / 3);
+        text-align: center;
+    }
+
+    .amaki-content {
+        width: calc(100% - 80px);
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+        gap: 117px;
+        /* margin-top: 273px; */
+        padding: 0 58px 64px;
+        top: 100%;
+        transform: translate(-50%, -220px);
+    }
+
+    .amaki-content>div {
+        width: 100%;
+    }
+
+    .amaki-img-wrap {
+        height: 221px;
+        width: 252px;
+        margin: 0 auto;
+        transform: translateX(9.5px);
+    }
+
+    .amaki-img {
+        width: 252px;
+        height: 402px;
+    }
+
+    .amaki-img-wrap::after {
+        width: 49.27px;
+        height: 40px;
+        top: calc(100% + 40px);
+        left: 92px;
+    }
+
+    .amaki-img-wrap::before {
+        width: 197px;
+        height: 197px;
+        top: 0;
+        left: 21px;
+    }
+
+    .amaki {
+        margin-top: 493px;
+    }
+
+    .amaki-info {
+        max-width: 100%;
+        padding: 0;
+        /* max-width: 350px; */
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer {
+        padding-top: 536px;
+    }
+
+    .amaki-title {
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: -0.416667px;
+    }
+
+    .amaki-text {
+        font-size: 18px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: 0.09px;
+    }
+}
+
+/* MEDIUM */
+
+/***** End TABLET *****/

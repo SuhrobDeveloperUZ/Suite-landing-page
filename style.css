@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+
+/***** TEST *****/
+
+/* .box1 {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    border: 3px solid crimson;
+    position: relative;
+}
+
+.box1::before {
+    content: url("./assets/favicon-32x32.png");
+    color: crimson;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box1::after {
+    content: 'XAYR DASTURCHI';
+    color: crimson;
+} */
+
+/***** End TEST *****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAF8F6;
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 50px;
+}
+
+.header-logo-div {
+    width: 81px;
+    height: 32px;
+}
+
+.header-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.hero {
+    padding-top: 103px;
+    padding-bottom: 92px;
+    margin-top: 67px;
+    position: relative;
+}
+
+.hero::after {
+    display: block;
+    content: '';
+    width: 350px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: calc(50% + 95px);
+    z-index: -10;
+    transform: translateX(-50%);
+    background-image: url("./assets/image-hero-portrait.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.hero-info {
+    max-width: 635px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.statistics {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-button {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: -0.16px;
+    color: #172339;
+    border: 1px solid #172339;
+    border-radius: 6px;
+    width: 219px;
+    height: 56px;
+    cursor: pointer;
+}
+
+.header-button:hover {
+    background-color: #172339;
+    color: #FAF8F6;
+}
+
+.hero-title {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: -1px;
+    color: #172339;
+}
+
+.line {
+    position: relative;
+}
+
+.line::before {
+    display: block;
+    content: "";
+    width: 287px;
+    height: 32px;
+    background-image: url("./assets/pattern-curved-line-1.svg");
+    background-size: 100% 100%;
+    background-position: center top;
+    position: absolute;
+    top: -60px;
+    left: 0;
+}
+
+.hero-text {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    color: #49566D;
+    max-width: 350px;
+    margin: 40px 0 52px;
+}
+
+.hero-button {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #FAF8F6;
+    background: #172339;
+    border-radius: 6px;
+    padding: 15px 31px 14px 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    background: linear-gradient(135deg, #A060FF 0%, #CB30E3 49.21%, #FFA84E 100%);
+}
+
+.right-title {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: #172339;
+}
+
+.right-text {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.5px;
+    color: #49566D;
+    margin-top: 1px;
+}
+
+.amaki {
+    position: relative;
+    margin-top: 480px;
+}
+
+.amaki-content {
+    background: #172339;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 30px);
+    position: absolute;
+    top: 50%;
+    top: calc(50% - 7.5px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.amaki-img-wrap::before {
+    display: inline-block;
+    content: "";
+    width: 294px;
+    height: 294px;
+    border-radius: 50%;
+    background: #DB65E2;
+    mix-blend-mode: normal;
+    opacity: 0.48;
+    filter: blur(67.957px);
+    position: absolute;
+    top: 210px;
+    left: 30px;
+}
+
+.amaki-img-wrap::after {
+    display: inline-block;
+    content: "";
+    width: 64.05px;
+    height: 52px;
+    background-image: url("./assets/pattern-curved-line-2.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 161px;
+    left: calc(100% + 30.2px);
+}
+
+.amaki-content>div {
+    width: 50%;
+}
+
+.amaki-img-wrap {
+    width: 375px;
+    height: 545px;
+    margin: 0 68px 0 auto;
+    position: relative;
+}
+
+.amaki-img {
+    width: 375px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.amaki-info {
+    max-width: 350px;
+    margin-left: 80px;
+    padding: 88px 0;
+}
+
+.amaki-title {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    color: #FAF8F6;
+}
+
+.amaki-text {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 0.1px;
+    color: #F3EDE7;
+    margin: 40px 0;
+}
+
+.amaki-name {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    color: #FAF8F6;
+}
+
+.amaki-job {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.5px;
+    color: #F3EDE7;
+}
+
+.footer {
+    padding-top: 360px;
+    padding-bottom: 72px;
+    background-color: #F3EDE7;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.social-icons {
+    display: flex;
+    gap: 28px;
+}
+
+.copy {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.0833333px;
+    color: #49566D;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: #172339;
+    -webkit-mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.facebook {
+    -webkit-mask-image: url('./assets/icon-facebook.svg');
+}
+
+.twitter {
+    -webkit-mask-image: url('./assets/icon-twitter.svg');
+}
+
+.instagram {
+    -webkit-mask-image: url('./assets/icon-instagram.svg');
+}
+
+.icon:hover {
+    opacity: 0.5;
+}
